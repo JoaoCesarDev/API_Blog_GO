@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"blog-api/models"
-	"blog-api/utils"
+	
 	"context"
 	"net/http"
 	"blog-api/config"
@@ -10,13 +10,6 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func Login(c *gin.Context) {
-	token, _ := utils.GenerateToken("123")
-
-	c.JSON(http.StatusOK, gin.H{
-		"token": token,
-	})
-}
 
 func CreatePost(c *gin.Context) {
 	var post models.Post

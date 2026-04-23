@@ -1,6 +1,6 @@
 package config
 
-import(
+import (
 	"context"
 	"log"
 	"time"
@@ -26,4 +26,5 @@ func ConnectDB(){
 	}
 
 	DB = client.Database("blog_db")
+	
 }
